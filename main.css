@@ -1,0 +1,415 @@
+:root {
+  color: #f9f4da;
+  background-color: #0f0d0e;
+  overflow-x: hidden;
+  font-family: "paytone one", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #0f0d0e;
+  flex-direction: row;
+  top: 0%;
+  position: sticky;
+  z-index: 10;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  text-decoration: none;
+  float: right;
+}
+
+.nav ul li {
+  display: inline-block;
+  padding: 0 0.625rem;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #f9f4da;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.nav ul li a:hover {
+  color: #dd7a7a;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #0f0d0e;
+  height: 80vh;
+  color: #f9f4da;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  background-color: #0f0d0e;
+  height: 60vh;
+  justify-content: top;
+  align-items: left;
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  height: 100vh;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  height: 100vh;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  height: 100vh;
+}
+
+.name-home {
+  font-size: 3.125rem;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.intro-home {
+  font-size: 1.25rem;
+  position: absolute;
+  display: flexbox;
+  top: 45%;
+  left: 10%;
+  width: 50%;
+  overflow-x: wrap;
+  margin-top: 2rem;
+}
+
+.pic-home {
+  position: absolute;
+  top: 35%;
+  right: 20%;
+  height: 30%;
+  size: cover;
+  background-color: none;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0.75rem;
+  justify-content: center;
+  position: relative;
+  top: 40%;
+  left: -34.8%;
+  margin: 2rem;
+}
+
+.social-icon {
+  height: 3.75rem;
+  width: 3.75rem;
+  padding: 0.375rem;
+}
+
+.social-icon:hover {
+  height: 4.5rem;
+  width: 4.5rem;
+  padding: 0.375rem;
+  border-radius: 50%;
+}
+
+.about-title {
+  font-size: 3.125rem;
+  display: flexbox;
+  position: relative;
+  top: 10%;
+  left: 10%;
+}
+
+.about-text {
+  font-size: 1.25rem;
+  position: relative;
+  display: flexbox;
+  top: 5%;
+  left: 10%;
+  width: 40%;
+  overflow-x: line-wrap;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  position: relative;
+}
+
+.skill {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  text-decoration: none;
+  color: #f9f4da;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.skill:hover {
+  color: #dd7a7a;
+}
+
+.skill-title {
+  font-size: 3.125rem;
+  display: flexbox;
+  position: relative;
+  top: 0%;
+}
+
+.skill-icon {
+  height: 3.75rem;
+  width: 3.75rem;
+  padding: 0.375rem;
+}
+
+.skill-icon:hover {
+  height: 4.5rem;
+  width: 4.5rem;
+  padding: 0.375rem;
+  animation: rotate 2s infinite;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 1.25rem;
+}
+
+.project-link {
+  color: #f9f4da;
+}
+
+.project-link:hover {
+  animation: size-inc 1s infinite;
+}
+
+.project-img {
+  height: 18.75rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-img:hover {
+  animation: glow 3s infinite;
+}
+.project-title {
+  font-size: 3.125rem;
+  display: flexbox;
+  position: relative;
+  top: 10%;
+}
+
+.contact-title {
+  font-size: 3.125rem;
+  display: flexbox;
+  position: relative;
+  top: 0%;
+}
+#check {
+  display: none;
+}
+a.active,
+a:hover {
+  transition: 0.5s;
+}
+
+.hamburger {
+  font-size: 1.875rem;
+  float: right;
+  margin-right: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .name-home {
+    font-size: 2.5rem;
+    top: 25%;
+    left: 5%;
+  }
+  .intro-home {
+    font-size: 1rem;
+    top: 40%;
+    left: 5%;
+    width: 60%;
+  }
+  .pic-home {
+    top: 35%;
+    right: 0;
+    height: 20%;
+  }
+  .socials {
+    top: 20%;
+    right: 5%;
+    margin: 2rem;
+  }
+  .social-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.25rem;
+  }
+  .social-icon:hover {
+    height: 3.125rem;
+    width: 3.125rem;
+    padding: 0.25rem;
+  }
+  .about-title {
+    font-size: 2.5rem;
+    top: 5%;
+    left: 5%;
+  }
+  .skills-content {
+    height: 140vh;
+  }
+  .about-text {
+    font-size: 1rem;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+  }
+  .skill-title {
+    font-size: 2.5rem;
+    top: 5%;
+    margin: 4rem;
+  }
+  .skill {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+  .skills-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skill-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0.3125rem;
+  }
+  .project {
+    width: 90%;
+    margin: 0.625rem 0;
+  }
+  .project-img {
+    height: 12.5rem;
+  }
+  .project-title {
+    font-size: 2.5rem;
+    top: 5%;
+    padding: 2rem;
+  }
+  .projects-list {
+    margin: 0;
+  }
+  .contact-title {
+    font-size: 2.5rem;
+    top: 10%;
+    margin: 4rem;
+  }
+
+  #check:checked ~ .nav ul {
+    left: 0%;
+  }
+
+  .nav ul li a {
+    font-size: 1.25rem;
+  }
+  a:hover,
+  a.active {
+    background: none;
+  }
+
+  .navbar {
+    height: auto;
+  }
+
+  .nav ul {
+    transition: all 0.5s;
+    left: 800%;
+    position: relative;
+    flex-direction: column;
+    direction: flex;
+  }
+
+  .nav ul li {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 1.25rem 0 rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+}
+
+@keyframes size-inc {
+  0% {
+    font-size: 1rem;
+  }
+  100% {
+    font-size: 1.2rem;
+  }
+}
