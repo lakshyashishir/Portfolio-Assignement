@@ -3,6 +3,7 @@
   background-color: #0f0d0e;
   overflow-x: hidden;
   font-family: "paytone one", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .navbar {
