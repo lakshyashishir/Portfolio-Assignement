@@ -16,6 +16,8 @@ Firebase config
 # it commented so all members can deploy to the same project(s) in .firebaserc.
 .firebaserc
 .github
+.package.json
+firebase.json
 
 # Runtime data
 pids

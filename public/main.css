@@ -266,7 +266,7 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .name-home {
     font-size: 2.5rem;
     top: 25%;
@@ -284,9 +284,8 @@ a:hover {
     height: 20%;
   }
   .socials {
-    top: 20%;
+    top: 40%;
     right: 5%;
-    margin: 2rem;
   }
   .social-icon {
     height: 2.5rem;
@@ -304,7 +303,7 @@ a:hover {
     left: 5%;
   }
   .skills-content {
-    height: 140vh;
+    height: 160vh;
   }
   .about-text {
     font-size: 1rem;
@@ -341,10 +340,10 @@ a:hover {
   .project-title {
     font-size: 2.5rem;
     top: 5%;
-    padding: 2rem;
+    margin: 2rem;
   }
   .projects-list {
-    margin: 0;
+    margin: 1rem;
   }
   .contact-title {
     font-size: 2.5rem;
@@ -353,7 +352,7 @@ a:hover {
   }
 
   #check:checked ~ .nav ul {
-    left: 0%;
+    display: block;
   }
 
   .nav ul li a {
@@ -370,7 +369,7 @@ a:hover {
 
   .nav ul {
     transition: all 0.5s;
-    left: 800%;
+    display: none;
     position: relative;
     flex-direction: column;
     direction: flex;
@@ -384,6 +383,136 @@ a:hover {
     display: block;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .intro-home {
+    font-size: 0.75rem;
+    top: 40%;
+    left: 5%;
+    width: 60%;
+  }
+  .name-home {
+    font-size: 2rem;
+    top: 25%;
+    left: 5%;
+  }
+  .pic-home {
+    top: 40%;
+    right: 0;
+    height: 15%;
+  }
+  .socials {
+    top: 55%;
+    right: 5%;
+  }
+  .home-content{
+    height: 50vh;
+  }
+  .social-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.25rem;
+  }
+  .about-content {
+    height: 10vh;
+  }
+  .about-text {
+    font-size: 0.75rem;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+  }
+  .skill-title{
+    font-size: 2rem;
+    top: 5%;
+  }
+  .skills-content {
+    height: 120vh;
+  }
+  .skill {
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
+  .project-img {
+    height: 10rem;
+  }
+  .project-title {
+    font-size: 2rem;
+    top: 3%;
+    margin: 1rem;
+  }
+  .projects-content{
+    height: 100vh;
+  }
+  .contact-title {
+    font-size: 2rem;
+    top: 5%;
+    margin: 2rem;
+  }
+  .contact-content{
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 300px ){
+  .intro-home {
+    font-size: 0.75rem;
+    top: 40%;
+    left: 5%;
+    width: 60%;
+  }
+  .name-home {
+    font-size: 2rem;
+    top: 25%;
+    left: 5%;
+  }
+  .pic-home {
+    top: 40%;
+    right: 0;
+    height: 15%;
+  }
+  .social-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.25rem;
+  }
+  .about-content {
+    height: 10vh;
+  }
+  .about-text {
+    font-size: 0.75rem;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+  }
+  .skill-title{
+    font-size: 2rem;
+    top: 5%;
+  }
+  .skills-content {
+    height: 200vh;
+  }
+  .skill {
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
+  .project-img {
+    height: 10rem;
+  }
+  .project-title {
+    font-size: 2rem;
+    top: 3%;
+    margin: 1rem;
+  }
+  .projects-content{
+    height: 150vh;
+  }
+  .contact-title {
+    font-size: 2rem;
+    top: 5%;
+    margin: 1rem;
+  }
+} 
 
 @keyframes rotate {
   0% {
